@@ -1,8 +1,0 @@
-{
-  "name": "Aura Home Health",
-  "description": "Official website for Aura Home Health in Clearwater, FL. Providing compassionate Long-Term Care (LTC) and Skilled Home Health services across Pinellas and Pasco counties.",
-  "requestFramePermissions": [],
-  "majorCapabilities": [
-    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
-  ]
-}
