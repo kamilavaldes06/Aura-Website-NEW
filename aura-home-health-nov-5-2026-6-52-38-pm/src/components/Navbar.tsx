@@ -81,7 +81,7 @@ export const Navbar: React.FC = () => {
             className="flex items-center gap-3.5 group shrink-0 focus-visible:outline-teal-800"
           >
             <img
-              src="/assets/aistudio/Gemini_Generated_Image_kjrsaukjrsaukjrs-removebg-preview_4eb72a09.png"
+              src="/assets/aistudio/favicon%20(2).png"
               alt="Aura Home Health"
               className="h-14 w-auto object-contain transition-transform group-hover:scale-[1.02]"
             />
