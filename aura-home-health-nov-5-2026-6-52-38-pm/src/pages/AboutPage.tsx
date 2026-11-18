@@ -51,19 +51,15 @@ export const AboutPage: React.FC = () => {
               </div>
             </div>
 
-            <div className="lg:col-span-5 space-y-6">
-              {/* Placeholder 1: About Us - Home Healthcare Professional & Older Adult */}
-              <PhotoPlaceholder
-                label={language === 'en' ? 'Image Placeholder' : 'Marcador de Fotografía'}
-                suggestedPhoto={
-                  language === 'en'
-                    ? 'Home healthcare professional interacting with an older adult in a comfortable home environment.'
-                    : 'Profesional de salud en el hogar interactuando con un adulto mayor en un ambiente hogareño cómodo.'
-                }
-                aspectRatioClass="aspect-[4/3]"
-              />
+           <div className="lg:col-span-5 space-y-6">
+  {/* About Us Image */}
+  <img
+    src="/images/about%20us.jpg"
+    alt="Aura Home Health - About Us"
+    className="w-full aspect-[4/3] object-cover rounded-2xl"
+  />
 
-              <div className="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-2xs space-y-4">
+  <div className="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-2xs space-y-4">
                 <div className="space-y-0.5">
                   <span className="text-xs uppercase tracking-widest font-semibold text-[#E85D04] font-sans">
                     {language === 'en' ? 'Agency Credentials' : 'Credenciales de la Agencia'}
