@@ -434,17 +434,12 @@ export const ContactPage: React.FC = () => {
 
             {/* Right Column: Placeholder 3 & General Inquiry Form (5 cols) */}
             <div className="lg:col-span-5 space-y-6">
-              {/* Placeholder 3: Contact Us - Professional Healthcare Worker Interaction */}
-              <PhotoPlaceholder
-                label={language === 'en' ? 'Image Placeholder' : 'Marcador de Fotografía'}
-                suggestedPhoto={
-                  language === 'en'
-                    ? 'Friendly, professional interaction between a healthcare worker and an individual or family.'
-                    : 'Interacción profesional y cordial entre un trabajador de la salud y un paciente o familia.'
-                }
-                aspectRatioClass="aspect-[4/3]"
-              />
-
+              {/* Contact Us Image */}
+<img
+  src="/assets/aistudio/lady%20with%20book.jpg"
+  alt="Caregiver spending time with an older adult at home"
+  className="w-full aspect-[4/3] object-cover object-center rounded-2xl"
+/>
               {/* Quick Inquiry Form with Dropdown (Non-sensitive general inquiries only) */}
               <div className="bg-white rounded-2xl p-6 sm:p-7 border border-stone-200/80 shadow-2xs space-y-4">
                 <div className="space-y-1">
