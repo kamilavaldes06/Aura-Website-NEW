@@ -61,13 +61,15 @@ export const Navbar: React.FC = () => {
             </button>
 
             {/* Direct Phone */}
-            <a
-              href={AGENCY_CONTACT.phone.telLink}
-              className="flex items-center gap-1.5 font-semibold text-white hover:text-orange-300 transition-colors"
-            >
-              <Phone className="w-3 h-3 text-orange-400 fill-orange-400" />
-              <span className="tabular-nums">{AGENCY_CONTACT.phone.display}</span>
-            </a>
+<a
+  href={AGENCY_CONTACT.phone.telLink}
+  className="inline-flex items-center gap-1.5 shrink-0 whitespace-nowrap font-semibold text-white hover:text-orange-300 transition-colors"
+>
+  <Phone className="w-3 h-3 shrink-0 text-orange-400 fill-orange-400" />
+  <span className="tabular-nums whitespace-nowrap">
+    {AGENCY_CONTACT.phone.display}
+  </span>
+</a>
           </div>
         </div>
       </div>
