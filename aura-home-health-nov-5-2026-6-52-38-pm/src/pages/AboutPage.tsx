@@ -56,7 +56,7 @@ export const AboutPage: React.FC = () => {
   <img
   src="/assets/aistudio/about%20us.jpg"
   alt="Aura Home Health - About Us"
-  className="w-full aspect-[4/3] object-cover rounded-2xl"
+  className="w-full h-[430px] object-cover object-center rounded-2xl"
 />
 
   <div className="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-2xs space-y-4">
