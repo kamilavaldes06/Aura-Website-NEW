@@ -54,10 +54,10 @@ export const AboutPage: React.FC = () => {
            <div className="lg:col-span-5 space-y-6">
   {/* About Us Image */}
   <img
-    src="/images/about%20us.jpg"
-    alt="Aura Home Health - About Us"
-    className="w-full aspect-[4/3] object-cover rounded-2xl"
-  />
+  src="/assets/aistudio/about%20us.jpg"
+  alt="Aura Home Health - About Us"
+  className="w-full aspect-[4/3] object-cover rounded-2xl"
+/>
 
   <div className="bg-white rounded-2xl p-6 border border-stone-200/80 shadow-2xs space-y-4">
                 <div className="space-y-0.5">
