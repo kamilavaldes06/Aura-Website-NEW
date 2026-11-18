@@ -2,7 +2,6 @@ import React from 'react';
 import { PageHeader } from '../components/PageHeader';
 import { useLanguage } from '../context/LanguageContext';
 import { LTC_SERVICES, SKILLED_SERVICES, AGENCY_CONTACT, PEDIATRIC_SERVICES } from '../data/agencyData';
-import { PhotoPlaceholder } from '../components/PhotoPlaceholder';
 import { LongTermCareProcess } from '../components/LongTermCareProcess';
 import { Check, Phone, ArrowRight, Baby } from 'lucide-react';
 import { Link } from 'react-router-dom';
