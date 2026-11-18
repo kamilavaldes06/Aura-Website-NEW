@@ -42,7 +42,7 @@ export const ServicesPage: React.FC = () => {
             <div className="lg:col-span-5">
               {/* Long-Term Care Image */}
               <img
-                src="/assets/aistudio/bedside.jpg"
+                src="/assets/aistudio/hand holding.jpg"
                 alt="Caregiver providing assistance and support at home"
                 className="w-full aspect-[4/3] object-cover object-center rounded-2xl"
               />
