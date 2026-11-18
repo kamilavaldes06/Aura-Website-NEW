@@ -69,9 +69,11 @@ export const Footer: React.FC = () => {
       aria-label="Aura Home Health Instagram"
       className="w-8.5 h-8.5 rounded-lg bg-teal-900/80 hover:bg-[#E85D04] border border-teal-700/60 text-white flex items-center justify-center transition-all shadow-2xs"
     >
-      <Instagram className="w-4 h-4" />
+         <Instagram className="w-4 h-4" />
     </a>
   </div>
+</div>
+
 </div>
 
           {/* Quick Links (2 cols) */}
