@@ -41,16 +41,17 @@ export const ServicesPage: React.FC = () => {
             </div>
 
             <div className="lg:col-span-5">
-              {/* Placeholder 2: Services - Caregiver Assisting with Everyday Activities */}
-              <PhotoPlaceholder
-                label={language === 'en' ? 'Image Placeholder' : 'Marcador de Fotografía'}
-                suggestedPhoto={
-                  language === 'en'
-                    ? 'Caregiver assisting someone with everyday activities at home.'
-                    : 'Cuidador asistiendo a una persona con actividades cotidianas en el hogar.'
-                }
-                aspectRatioClass="aspect-[4/3]"
-              />
+  {/* Placeholder 2: Services - Caregiver Assisting with Everyday Activities */}
+  <PhotoPlaceholder
+    label={language === 'en' ? 'Image Placeholder' : 'Marcador de Fotografía'}
+    suggestedPhoto={
+      language === 'en'
+        ? 'Caregiver assisting someone with everyday activities at home.'
+        : 'Cuidador asistiendo a una persona con actividades cotidianas en el hogar.'
+    }
+    aspectRatioClass="aspect-[4/3]"
+  />
+</div>
             </div>
           </div>
 
