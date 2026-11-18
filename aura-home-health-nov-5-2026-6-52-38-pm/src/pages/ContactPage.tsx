@@ -436,7 +436,7 @@ export const ContactPage: React.FC = () => {
             <div className="lg:col-span-5 space-y-6">
               {/* Contact Us Image */}
 <img
-  src="/assets/aistudio/lady%20with%20book.jpg"
+  src="/assets/aistudio/lady with book.jpg"
   alt="Caregiver spending time with an older adult at home"
   className="w-full aspect-[4/3] object-cover object-center rounded-2xl"
 />
