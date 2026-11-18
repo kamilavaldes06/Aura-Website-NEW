@@ -15,11 +15,11 @@ export const Footer: React.FC = () => {
           {/* Brand & Introduction (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
             <div className="flex items-center gap-3">
-              <img
-                src="/assets/aistudio/Gemini_Generated_Image_kjrsaukjrsaukjrs-removebg-preview_4eb72a09.png"
-                alt="Aura Home Health"
-                className="h-12 w-auto object-contain"
-              />
+             <img
+  src="/assets/aistudio/favicon%20(2).png"
+  alt="Aura Home Health"
+  className="h-12 w-auto object-contain"
+/>
               <div>
                 <span className="text-xl font-bold tracking-tight text-white block font-sans">
                   AURA HOME HEALTH
