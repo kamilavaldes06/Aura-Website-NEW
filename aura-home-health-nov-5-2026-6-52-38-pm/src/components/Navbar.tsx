@@ -30,9 +30,9 @@ export const Navbar: React.FC = () => {
       <div className="bg-[#0A3D44] text-[#E0F2F1] text-xs py-2 px-4 sm:px-8">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-4 text-[13px]">
-            <span className="font-medium text-white/90">
-              {t.nav.officeHours}
-            </span>
+            <span className="hidden sm:inline font-medium text-white/90">
+  {t.nav.officeHours}
+</span>
             <span className="hidden md:inline-block text-teal-300/40">|</span>
             <span className="hidden md:inline-block text-teal-200">
               {t.nav.support247}
