@@ -3,18 +3,6 @@ import { Link } from 'react-router-dom';
 import { Phone, Mail, MapPin, Printer, Clock, Facebook, Instagram } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import { AGENCY_CONTACT } from '../data/agencyData';
-import { SOCIAL_LINKS } from '../config/socialLinks';
-
-const TikTokIcon: React.FC<{ className?: string }> = ({ className = 'w-4 h-4' }) => (
-  <svg
-    className={className}
-    viewBox="0 0 24 24"
-    fill="currentColor"
-    aria-hidden="true"
-  >
-    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.298-.002.595.042.88.13V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.49 6.27 6.27 0 0 0 1.96-4.48V8.94a8.28 8.28 0 0 0 5.21 1.83V7.32a4.88 4.88 0 0 1-1.4-.63z" />
-  </svg>
-);
 
 export const Footer: React.FC = () => {
   const { language, t } = useLanguage();
@@ -57,55 +45,34 @@ export const Footer: React.FC = () => {
               </p>
             </div>
 
-            {/* Social Media Links (Small, professional, placeholder-aware) */}
-            <div className="pt-3 border-t border-teal-800/70 space-y-2">
-              <div className="flex items-center gap-2">
-                <span className="text-xs uppercase tracking-wider font-semibold text-teal-200 font-sans">
-                  {language === 'en' ? 'Connect With Us' : 'Síganos'}
-                </span>
-                <span className="text-[10px] text-teal-300/80 font-medium bg-teal-900/80 px-2 py-0.5 rounded-full border border-teal-700/50">
-                  {language === 'en' ? 'Coming Soon' : 'Próximamente'}
-                </span>
-              </div>
-              <div className="flex items-center gap-2.5">
-                {SOCIAL_LINKS.map((item) => {
-                  const isConfigured = Boolean(item.url && item.url.trim() !== '');
+           {/* Social Media Links */}
+<div className="pt-3 border-t border-teal-800/70 space-y-2">
+  <span className="text-xs uppercase tracking-wider font-semibold text-teal-200 font-sans">
+    {language === 'en' ? 'Connect With Us' : 'Síganos'}
+  </span>
 
-                  if (isConfigured && item.url) {
-                    return (
-                      <a
-                        key={item.id}
-                        href={item.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label={item.ariaLabel}
-                        className="w-8.5 h-8.5 rounded-lg bg-teal-900/80 hover:bg-[#E85D04] border border-teal-700/60 text-white flex items-center justify-center transition-all shadow-2xs"
-                      >
-                        {item.id === 'facebook' && <Facebook className="w-4 h-4" />}
-                        {item.id === 'instagram' && <Instagram className="w-4 h-4" />}
-                        {item.id === 'tiktok' && <TikTokIcon className="w-4 h-4" />}
-                      </a>
-                    );
-                  }
+  <div className="flex items-center gap-2.5">
+    <a
+      href="https://www.facebook.com/profile.php?id=61596168185784"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Aura Home Health Facebook"
+      className="w-8.5 h-8.5 rounded-lg bg-teal-900/80 hover:bg-[#E85D04] border border-teal-700/60 text-white flex items-center justify-center transition-all shadow-2xs"
+    >
+      <Facebook className="w-4 h-4" />
+    </a>
 
-                  // Placeholder state: NOT clickable on the published website, clearly labeled
-                  return (
-                    <span
-                      key={item.id}
-                      role="img"
-                      aria-label={item.ariaLabel}
-                      title={`${item.name} (${language === 'en' ? 'Official profile coming soon' : 'Perfil oficial próximamente'})`}
-                      className="w-8.5 h-8.5 rounded-lg bg-teal-950/60 border border-teal-800/80 text-teal-300/60 flex items-center justify-center cursor-default select-none"
-                    >
-                      {item.id === 'facebook' && <Facebook className="w-4 h-4" />}
-                      {item.id === 'instagram' && <Instagram className="w-4 h-4" />}
-                      {item.id === 'tiktok' && <TikTokIcon className="w-4 h-4" />}
-                    </span>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
+    <a
+      href="https://www.instagram.com/aurahomehealth_/"
+      target="_blank"
+      rel="noopener noreferrer"
+      aria-label="Aura Home Health Instagram"
+      className="w-8.5 h-8.5 rounded-lg bg-teal-900/80 hover:bg-[#E85D04] border border-teal-700/60 text-white flex items-center justify-center transition-all shadow-2xs"
+    >
+      <Instagram className="w-4 h-4" />
+    </a>
+  </div>
+</div>
 
           {/* Quick Links (2 cols) */}
           <div className="lg:col-span-2">
